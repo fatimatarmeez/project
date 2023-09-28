@@ -1,0 +1,48 @@
+body {
+    background-color: #F2C2F2;
+
+    font-family: "Source Sans Pro";
+
+    text-align: center;
+    overflow: hidden;
+    /* Add this line to prevent scrollbars */
+}
+
+.styled-button {
+    margin-top: 20px;
+    /* Adjust the top margin as needed */
+    margin-bottom: 20px;
+    /* Adjust the bottom margin as needed */
+    padding: 10px 50px;
+    font-size: 20px;
+    background-color: #038C7F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #02736b;
+}
+
+canvas {
+    margin: 50px auto;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+    }
+
+    canvas {
+        margin: 20px auto;
+        /* Reduce margin for smaller screens */
+    }
+
+
+}

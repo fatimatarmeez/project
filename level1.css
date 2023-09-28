@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #038C7F;
+    background-color: #F2C2F2;
+}
+
+.hidden {
+    display: none;
+}
+
+.styled-button {
+    margin-top: 50px;
+    /* Adjust the top margin as needed */
+    margin-bottom: 50px;
+    /* Adjust the bottom margin as needed */
+    padding: 10px 50px;
+    font-size: 20px;
+    background-color: #038C7F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #02736b;
+}
+
+
+#board {
+    width: 360px;
+    height: 360px;
+    background-color: #038C7F;
+    ;
+    border: 10px solid #038C7F;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #038C7F;
+}
+
+@media screen and (max-width: 480px) {
+    #board {
+        max-width: 100%;
+        /* Make the board 100% of the screen width */
+    }
+
+    #board img {
+        width: 40%;
+        /* Adjust card size for small screens */
+        max-width: 100px;
+        /* Limit the card width to a maximum of 100px */
+    }
+}
