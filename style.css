@@ -193,3 +193,29 @@ button {
 .highlight {
     color: #FDF8E6;
 }
+
+@media (max-width: 576px) {
+    .game {
+        width: 90%;
+        /* Adjust width for small screens */
+    }
+
+    button {
+        font-size: 14px;
+        /* Adjust font size for small screens */
+    }
+
+    .card {
+        width: 60px;
+        /* Adjust card width for small screens */
+        height: 60px;
+        /* Adjust card height for small screens */
+    }
+
+    .card-back {
+        font-size: 14px;
+        /* Adjust font size for small screens */
+        line-height: 60px;
+        /* Adjust line-height for small screens */
+    }
+}

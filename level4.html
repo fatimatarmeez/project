@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <title>المرحلة الرابعة</title>
+  <link rel="stylesheet" href="style4.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <div class="top-button-container">
+    <button onclick="showAlert()" class="styled-button">ابدأ اللعبة</button>
+  </div>
+  <div class="wrapper">
+
+    <h1> احزر الكلمة</h1>
+
+    <div class="content">
+      <input type="text" class="typing-input" maxlength="1">
+      <div class="inputs"></div>
+      <div class="details">
+        <p class="hint">تلميح: <span></span></p>
+        <p class="guess-left">التخمينات المتبقية: <span></span></p>
+        <p class="wrong-letter">الأحرف الخاطئة: <span></span></p>
+      </div>
+      <button class="reset-btn">اعادة المحاولة</button>
+    </div>
+  </div>
+  <audio id="game4" src="game4.mp3"></audio>
+  <script src="word4.js"></script>
+  <script src="script4.js"></script>
+
+</body>
+
+</html>

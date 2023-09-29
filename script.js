@@ -140,7 +140,7 @@ const flipCard = card => {
                 // If the player clicks "Play again," go to another HTML page
                 if (result.isConfirmed) {
                     // Replace 'path-to-another-page.html' with the actual URL of the page you want to navigate to
-                    // window.location.href = './level4.html';
+                    window.location.href = './level4.html';
                 }
             });
         }, 1000);

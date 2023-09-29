@@ -47,17 +47,3 @@ body {
     height: 118px;
     border: 1px solid #038C7F;
 }
-
-@media screen and (max-width: 480px) {
-    #board {
-        max-width: 100%;
-        /* Make the board 100% of the screen width */
-    }
-
-    #board img {
-        width: 40%;
-        /* Adjust card size for small screens */
-        max-width: 100px;
-        /* Limit the card width to a maximum of 100px */
-    }
-}
