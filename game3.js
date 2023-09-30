@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let leftPressed = false;
     let upPressed = false;
     let downPressed = false;
+
     // Initialize Hammer.js for touch gestures on the canvas element
     const hammer = new Hammer(canvas);
 
@@ -48,6 +49,69 @@ document.addEventListener("DOMContentLoaded", function () {
         downPressed = true;
         upPressed = false;
     });
+
+    // Add touch event listeners for touch controls
+    canvas.addEventListener("touchstart", handleTouchStart, false);
+    canvas.addEventListener("touchmove", handleTouchMove, false);
+    canvas.addEventListener("touchend", handleTouchEnd, false);
+
+    let touchStartX = null;
+    let touchStartY = null;
+
+    function handleTouchStart(event) {
+        touchStartX = event.touches[0].clientX;
+        touchStartY = event.touches[0].clientY;
+    }
+
+    function handleTouchMove(event) {
+        if (touchStartX === null || touchStartY === null) {
+            return;
+        }
+
+        const touchEndX = event.touches[0].clientX;
+        const touchEndY = event.touches[0].clientY;
+
+        const deltaX = touchEndX - touchStartX;
+        const deltaY = touchEndY - touchStartY;
+
+        // Determine the primary direction of the swipe
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+            // Horizontal swipe
+            if (deltaX > 0) {
+                // Swipe right
+                rightPressed = true;
+                leftPressed = false;
+            } else {
+                // Swipe left
+                leftPressed = true;
+                rightPressed = false;
+            }
+        } else {
+            // Vertical swipe
+            if (deltaY > 0) {
+                // Swipe down
+                downPressed = true;
+                upPressed = false;
+            } else {
+                // Swipe up
+                upPressed = true;
+                downPressed = false;
+            }
+        }
+
+        touchStartX = null;
+        touchStartY = null;
+    }
+
+    function handleTouchEnd() {
+        // Reset the touch controls when the touch ends
+        touchStartX = null;
+        touchStartY = null;
+        rightPressed = false;
+        leftPressed = false;
+        upPressed = false;
+        downPressed = false;
+    }
 
     const map = [
         [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
