@@ -169,6 +169,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
     function initializeGame() {
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        const tileSize = 25;
+
+        canvas.height = tileSize * 22;
+        canvas.width = tileSize * 20;
+
         drawBoard();
         drawMaze();
         drawPlayer();
