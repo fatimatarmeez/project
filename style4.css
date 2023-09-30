@@ -9,7 +9,6 @@
 
 body {
   display: flex;
-  padding: 0 10px;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -38,12 +37,10 @@ body {
 }
 
 .styled-button {
-  margin-top: 50px;
-  /* Adjust the top margin as needed */
-  margin-bottom: 50px;
-  /* Adjust the bottom margin as needed */
-  padding: 10px 50px;
-  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
   background-color: #038C7F;
   color: #fff;
   border: none;
@@ -58,23 +55,26 @@ body {
 }
 
 .wrapper {
-  width: 430px;
+  width: 100%;
+  /* Adjusted for mobile */
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper h1 {
-  font-size: 25px;
+  font-size: 22px;
+  /* Adjusted for mobile */
   font-weight: 500;
-  padding: 20px 25px;
+  padding: 15px 20px;
+  /* Adjusted for mobile */
   border-bottom: 1px solid #ccc;
   text-align: center;
 }
 
 .wrapper .content {
-  margin: 25px 25px 35px;
-
+  margin: 20px;
+  /* Adjusted for mobile */
 }
 
 .content .inputs {
@@ -84,10 +84,12 @@ body {
 }
 
 .inputs input {
-  height: 57px;
-  width: 56px;
-  margin: 4px;
-  font-size: 24px;
+  height: 48px;
+  /* Adjusted for mobile */
+  width: 48px;
+  /* Adjusted for mobile */
+  margin: 3px;
+  font-size: 18px;
   font-weight: 500;
   color: #1ba98c;
   text-align: center;
@@ -112,14 +114,14 @@ body {
 }
 
 .content .details {
-  margin: 20px 0 25px;
-
+  margin: 15px 0 20px;
+  /* Adjusted for mobile */
 }
 
 .details p {
-  font-size: 19px;
+  font-size: 16px;
+  /* Adjusted for mobile */
   margin-bottom: 10px;
-
 }
 
 .content .reset-btn {
@@ -128,8 +130,10 @@ body {
   cursor: pointer;
   color: #fff;
   outline: none;
-  padding: 15px 0;
-  font-size: 17px;
+  padding: 12px 0;
+  /* Adjusted for mobile */
+  font-size: 16px;
+  /* Adjusted for mobile */
   border-radius: 5px;
   background: #038C7F;
   transition: all 0.3s ease;
@@ -140,32 +144,23 @@ body {
 }
 
 @media screen and (max-width: 460px) {
-  .wrapper {
-    width: 100%;
-  }
-
   .wrapper h1 {
-    font-size: 22px;
-    padding: 16px 20px;
+    font-size: 20px;
+    padding: 14px 20px;
   }
 
-  .wrapper .content {
-    margin: 25px 20px 35px;
-  }
-
-  .inputs input {
-    height: 51px;
-    width: 50px;
-    margin: 3px;
-    font-size: 22px;
+  .content .inputs input {
+    height: 44px;
+    width: 44px;
+    font-size: 16px;
   }
 
   .details p {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .content .reset-btn {
-    padding: 14px 0;
-    font-size: 16px;
+    padding: 10px 0;
+    font-size: 14px;
   }
 }

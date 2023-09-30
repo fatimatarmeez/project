@@ -238,8 +238,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const tileSize = 25;
 
         // Set the CSS width and height properties to make it appear smaller
-        canvas.style.width = (tileSize * 10) + "px"; // Adjust the width as needed
-        canvas.style.height = (tileSize * 11) + "px"; // Adjust the height as needed
+        canvas.style.width = (tileSize * 12) + "px"; // Adjust the width as needed
+        canvas.style.height = (tileSize * 16) + "px"; // Adjust the height as needed
 
         // Maintain the actual canvas dimensions
         canvas.width = tileSize * 20;
@@ -323,7 +323,7 @@ function showAlertWin() {
     gameOverAudio.play();
 
     Swal.fire({
-        title: 'الصفة الثانية: الهادي الى الصراط المستقيم ',
+        title: 'الصفة الثانية: الهادي الى صراطٍ مستقيم ',
         text: '(وَإِنَّكَ لَتَهْدِي إِلَى صِرَاطٍ مُسْتَقِيمٍ)',
         icon: 'success',
         confirmButtonText: 'المرحلة الثالثة'
