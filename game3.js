@@ -171,12 +171,15 @@ document.addEventListener("DOMContentLoaded", function () {
     function initializeGame() {
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
-        const screenWidth = window.innerWidth;
-        const screenHeight = window.innerHeight;
         const tileSize = 25;
 
-        canvas.height = tileSize * 22;
+        // Set the CSS width and height properties to make it appear smaller
+        canvas.style.width = (tileSize * 10) + "px"; // Adjust the width as needed
+        canvas.style.height = (tileSize * 11) + "px"; // Adjust the height as needed
+
+        // Maintain the actual canvas dimensions
         canvas.width = tileSize * 20;
+        canvas.height = tileSize * 22;
 
         drawBoard();
         drawMaze();
