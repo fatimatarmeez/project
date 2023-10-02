@@ -33,6 +33,7 @@ window.onload = function () {
             tile.addEventListener("drop", dragDrop);        //drag an image over another image, drop the image
             tile.addEventListener("dragend", dragEnd);      //after drag drop, swap the two tiles
 
+
             document.getElementById("board").append(tile);
         }
     }
@@ -83,6 +84,15 @@ function dragDrop(e) {
 function dragEnd() {
 
 }
+
+
+
+
+
+
+
+
+
 function touchStart(e) {
 
     currTile = this;
@@ -112,7 +122,6 @@ function touchEnd(e) {
     document.getElementById("turns").innerText = turns;
     checkWin();
 }
-
 
 function checkWin() {
     var currentOrder = [];
@@ -154,7 +163,7 @@ function showAlertWin() {
 function showAlert() {
     Swal.fire({
         title: 'المرحلة الأولى',
-        text: 'عزيزتي عليك ِ بتركيب الصورة التي تدل على إحدى صفات الرسول الأكرم"ص" المذكورة في القرآن االكريم',
+        text: ' عزيزتي عليك ِ بتركيب الصورة التي تدل على إحدى صفات الرسول الأكرم"ص" المذكورة في القرآن االكريم. ملاحظة :تبديل قطع الصورة يكون من خلال استخدام الاصبعين ',
 
         confirmButtonText: 'تم'
     });

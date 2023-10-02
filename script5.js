@@ -69,7 +69,7 @@ const checkWord = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 // Redirect to another webpage when the button is clicked
-                // window.location.href = './level5.html';
+                window.location.href = './last.html';
             }
         });
     }
@@ -91,7 +91,7 @@ function showAlert() {
     //hideStartButton();
     Swal.fire({
         title: 'المرحلة الخامسة ',
-        text: 'عزيزتي عليك أن تقرأي التلميح و ترتّبي الأحرف المبعثرة لتتعرفي على أسماء النبي  (ص) الواردة في القرآن الكريم',
+        text: 'عزيزتي عليك أن تقرأي التلميح و ترتّبي الأحرف المبعثرة لتتعرفي على أسماء النبي  (ص) الواردة في القرآن الكريم لا تقلقي ان لم تعرفي الاجابة الصحيحة عند انتهاء الوقت سوف تظهر الاجابة الصحيحة و يمكنك في اي وقت الضغط على اعادة المحاولة ليظهر لك تلميح جديد',
         confirmButtonText: 'تم'
     });
 }

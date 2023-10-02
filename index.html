@@ -1,25 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> لعبة-المرحلة الأولى</title>
-    <link rel="stylesheet" href="level1.css">
-    <script src="level1.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>لعبة-على حبّ محمّد</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
+    <link rel="stylesheet" href="style0.css">
 </head>
 
 <body>
-    <button onclick="showAlert()" class="styled-button">ابدأ اللعبة</button>
-    </div>
+    <header>
+        <nav>
+            <div class="container">
+                <!--<h3 class="logo">لعبة<span></span></h3>-->
+                <div class="logo"></div>
+                <div class="hamburger-menu">
+                    <!--<div class="bar"></div>--><img src="pic1.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <div class="header-content">
+            <div class="hs">
+                <h1><b>وُلِـدَ الـهُـدى فَـالكائِناتُ ضِياءُ</b></h1>
+            </div>
+            <h1 class="big-title translate" data-speed="0.1"> <img src="ima.png" alt=""></h1>
 
-    <div id="board">
-    </div>
-    <h1 class="hidden">عدد التحريك : <span id="turns">0</span></h1>
-    <audio id="winAudio" src="win_sound.mp3" preload="auto"></audio>
+        </div>
+        <h2> بمناسبة ولادة النبي محمد(ص) وحيفده الامام الصادق (ع) تقدّم مجموعة طوبى الشبابية اللعبة الالكترونية على حبّ
+            محمّد
+        </h2>
+
+
+    </header>
+
+    <section>
+        <div class="shadow"></div>
+
+        <div class="container">
+            <div class="content opacity">
+                <h1 class="title">
+                    ارشادات
+                    <div class="border"></div>
+                </h1>
+                <h6><span class="x">ورد في دعاء زمن الغيبة "اللهم عرّفني رسولك فانك ان لم تعرفني
+                        رسولك لم أعرف حجتك"</span>
+                    <br>
+
+                    عزيزتي يسّرنا أن نقدّم بين يديك هذه اللعبة التي ستعرّفك عند اكمال كل مرحلة على صفة من صفات
+
+                    الرسول (ص) على ضوء القرآن الكريم
+
+                    <ul><b>الخطوات</b>
+                        <li>أولا الضغط على زر "ابدأ اللعبة " ليرشدك لما هو مطلوب منك في كل مرحلة </li>
+                        <li>ثانيا للانتقال للمرحلة التالية يكون فقط من خلال اكمالك للمرحلة </li>
+                        <li>ثالثا للربح في هذه اللعبة عليك اكمال كل المراحل </li>
+
+                    </ul>
+                </h6>
+            </div>
+
+
+            <div class="imgContainer opacity">
+                <img src="image.jpg" alt="">
+
+
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="goToGame2Button" class="styled-button">ابدأ اللعبة</button>
+        </div>
+    </section>
+    <audio id="buttonSound" src="start.mp3"></audio>
+    <script src="app0.js"></script>
 </body>
 
 </html>

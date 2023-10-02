@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" direction="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المرحلة الأخيرة</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="stylelast.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+
+<body>
+  <div class="btn-container"> <button onclick="showAlert()" class="styled-button">ابدأ اللعبة</button></div>
+  <div class="wrapper">
+    <div class="container " id="celebration-container">
+      <canvas id="wheel"></canvas>
+      <button id="spin-btn">حرّك</button>
+      <img src="spinner-arrow-.svg" alt="spinner-arrow" />
+    </div>
+    <div id="final-value">
+      <p></p>
+    </div>
+  </div>
+  <!-- Chart JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <!-- Chart JS Plugin for displaying text over chart -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+  <!-- Script -->
+  <script src="scriptlast.js"></script>
+  <audio id="last" src="last.mp3"></audio>
+</body>
+
+</html>
