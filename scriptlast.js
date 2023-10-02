@@ -83,7 +83,7 @@ const valueGenerator = (angleValue) => {
         }).then((result) => {
           if (result.isConfirmed) {
             // Redirect to the Google Form when "Go to Google Form" is clicked
-            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSde420R0iY055QFDtyiXxQnW31OTiLF_jdmvAn8o-iRoyKzHw/viewform?usp=sf_link';
+            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSd_WDN751mblhcW5XWPtA86f8d4vvRLhEQgzbHFKurKchAafA/viewform?usp=sf_link'
           }
         }); spinBtn.disabled = false;
       });

@@ -323,7 +323,7 @@ function showAlertWin() {
     gameOverAudio.play();
 
     Swal.fire({
-        title: 'الصفة الثانية: الهادي الى صراطٍ مستقيم ',
+        title: 'الصفة الثانية: الهادي إلى صراطٍ مستقيم ',
         text: '(وَإِنَّكَ لَتَهْدِي إِلَى صِرَاطٍ مُسْتَقِيمٍ)',
         icon: 'success',
         confirmButtonText: 'المرحلة الثالثة'
